@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>getElementsByTagName MoreSpecifically</title>
+</head>
+<body>
+    <h1>GET ELEMENTS BY TAG NAME more specifically</h1>
+    <p>in this lesson we are getting elements by tag name in more specifically way</p>
+    <p id="pick">in this paragraph we will give id and pick tha p tag with id name
+        <span>we are using span tag in this</span>
+    </p>
+</body>
+<script>
+    //more specific
+  /* var result= document.getElementById("pick");
+   var Fresult=result.getElementsByTagName("span"); */
+   //shortcode for upper 2 lines
+   var Fresult=document.getElementById("pick").getElementsByTagName("span");
+   console.log(Fresult);
+</script>
+</html>
