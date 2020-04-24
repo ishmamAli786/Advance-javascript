@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GETELEMENT using Loop</title>
+</head>
+<body>
+    <h1>getelement using loop</h1>
+    <p>in this lesson we are using loop for getting element by id or tagname</p>
+
+</body>
+<script>
+    //loop
+    var len=document.getElementsByTagName("h1").length;
+    for(let i=0 ;i<len; i++){
+        var result=document.getElementsByTagName("h1")[i];
+        document.write(result+"<br>");
+        console.log(result)
+    }
+</script>
+</html>
