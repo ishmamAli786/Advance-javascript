@@ -1,0 +1,14 @@
+<script>
+    //scope chain in javascript
+    //the scope chain is used to solve the value of variable name in javascript
+    var a="hello guys";
+    function first(){
+        var b="how are you.....";
+        second();
+        function second(){
+            var c="ishmam ali khan";
+            console.log(a+b+c);
+        }
+    }  
+    first();
+</script>
