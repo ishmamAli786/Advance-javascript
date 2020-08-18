@@ -1,7 +1,17 @@
 var list=document.getElementById('list'); 
+firebase.database().ref('todo').on('child_added',function(data){
+    console.log(data.val())
+})
 function addTodo(){
     var todo_item=document.getElementById('todo-item');
-    //create li tag
+    var database=firebase.database().ref('todo')
+    var key=database.push().key;
+    var todo={
+        value: todo_item.value,
+        key: key
+    }
+    database.child(key).set(todo)
+   // create li tag
     var li=document.createElement('li') 
     var textNode=document.createTextNode(todo_item.value)
     li.appendChild(textNode)
@@ -35,4 +45,5 @@ function delets(){
 function  editItem(e){
     var a=prompt("ENTER UPDATE VALUE")
     e.parentNode.firstChild.nodeValue=a
+
 }
