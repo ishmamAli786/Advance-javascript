@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecmascript 6</title>
+</head>
+<body>
+    <script>
+        // function foo(){
+        //      var name="ishmam";
+        // }
+        // foo()
+        // console.log(name);
+
+
+  // variable var let and const
+
+        // var names="khan";
+        // var names="ishmam";
+        // console.log(names)
+
+        // let name="ishmam";
+        //  name="khan";
+        //  name="ali";
+        // console.log(name)
+        // const naam="khan";
+        // console.log(naam)
+
+
+        //template literals
+        // let firstname="ishmam";
+        // let lastname="khan";
+        // console.log(`My Name Is ${firstname} ${lastname}`)
+
+
+
+        // spread operators
+
+
+        // in simple javascript
+
+        // var students1=["ishmam","ali","khan"];
+        // var students2=["khan","ali","ishmam"];
+        // var merge=students1.concat(students2);
+        // console.log(merge);
+        // console.log(students1)
+        // console.log(students2)
+
+
+        // with spread operator
+        // var students1=["ishmam","ali","khan"];
+        // var students2=[...students1,"khan","ali","ishmam"];
+        // console.log(students2)
+
+
+
+        // Object Destructuring
+        // var student={
+        //     name:"ishmam",
+        //     school: "saylani",
+        //     roll:123
+        // }
+        // let {name,school,rol}=student;
+        // console.log(name)
+
+
+
+        /// Ternary Operators
+        // before ternary operator
+        // var age=20;
+        // if(age>30){
+        //     console.log('greater than number');
+        // }else{
+        //     console.log('less than number');
+        // }
+
+
+        // with ternary operator
+        // var age=20;
+        // var check=age>10? "greater than number" : "less than number";
+        // console.log(check);
+
+
+
+
+        // synchronas and Asynchronas
+        // setTimeout(function(){
+        //     console.log("Number 1");
+        // },1000)
+        //        console.log("Number 2");
+        // console.log("Number 3");
+
+
+        /// Promise
+        var promise=new Promise(function(resolve,reject){
+            var zinger="available";
+            if(zinger==="available"){
+                resolve('ishmam ny apna promise pora kar diya');
+            }
+            else{
+                reject('ishmam ny apna  promise toor diya');
+            }
+        })
+        promise.then(function(date){
+            console.log(date)
+        })
+        .catch(function(err){
+            console.log(err)
+        })
+        
+
+    </script>
+</body>
+</html>
