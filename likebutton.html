@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like or Dislike Button Using JavaScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed93bc933e.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Maven Pro', sans-serif;
+        }
+        body{
+            width:100%;
+            height: 100vh;
+            display: flex;
+            background-color: black;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+        .fa{
+            font-size: 40px;
+            cursor:pointer;
+        }
+        .fa:hover{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p>Are You With Me Or Not?</p>
+    <i onclick="changeState()" class="fa fa-thumbs-up" aria-hidden="true" id="up"></i>
+</div>
+</body>
+<script>
+    function changeState(){
+        var up=document.getElementById('up');
+        up.classList.toggle("fa-thumbs-down");
+    }
+</script>
+</html>
