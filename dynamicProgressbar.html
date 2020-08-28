@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Progress Bar</title>
+    <script src="https://kit.fontawesome.com/ed93bc933e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: 'Maven Pro', sans-serif;
+        }
+        #progress{
+            width: 80%;
+            background-color: grey;
+            margin:auto;
+        }
+        #mybar{
+            width: 10%;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center"><i class="fa fa-music" aria-hidden="true"></i>Dynamic Animated Progress Bar<i class="fa fa-music" aria-hidden="true"></i></h1>
+    <div id="progress">
+        <div id="mybar">
+            <span id="value">1%</span>
+        </div>
+    </div><br>
+    <button onClick="moves()">Click Me</button>
+</body>
+<script src="dynamicProgressbar.js"></script>
+</html>
