@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 404 Error</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        main{
+            width: 100%;
+            height:100vh;
+            background-image: url("w.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            transition: all 1s linear;
+        }
+        .center{
+            width:65%;
+            height:70%;
+            background-image: url("blue.png");
+            background-repeat: no-repeat;
+            background-size:cover;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+        .center h1{
+            font-size: 200px;
+            color:white;
+            letter-spacing: 5px;
+            font-weight: 700;
+            text-shadow: 10px 9px 3px #74b9ff;
+            transition: all 1s linear;
+        }
+        .center h2{
+            color: white;
+            font-size: 26px;
+            font-weight: 700px;
+            text-transform: uppercase;
+        }
+        .center p{
+            color:white;
+            font-weight: 400;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .center a{
+            font-size: 26px;
+            text-decoration: none;
+            text-transform: capitalize;
+            display: inline-block;
+            color:black;
+            background:white;
+            padding: 15px 30px;
+            box-shadow:5px 4px 15px -5px #0046d5;
+            border-radius: 40px;
+            transition: all 1s linear;
+        }
+        .center a:hover{
+            background-color: blue;
+            color: white;
+        }
+        .center h1:hover{
+            text-shadow: 9px 6px 3px #b2bec3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="center">
+            <h1>404</h1>
+            <h2>PAGE NOT FOUND</h2>
+            <p>OOPS1! the page your are looking for is delte or temporary unavailable.
+               
+            </p>
+            <a>go to home page</a>
+        </div>
+    </main>
+</body>
+</html>
